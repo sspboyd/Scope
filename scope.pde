@@ -9,7 +9,7 @@ ScopeViewer scopeViewer;
 
 void setup() {
   background(255);
-  size(1300, 600);
+  size(800, 600);
   rSn = 47;
   // rSn = 29;
   // rSn = 18;
@@ -30,6 +30,7 @@ void draw() {
 
   map.render();
   reticle.update();
+  scopeViewer.update();
   scopeViewer.render();
 
 }

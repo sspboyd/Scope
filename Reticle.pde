@@ -30,10 +30,10 @@ class Reticle {
 
   void update() {
 		Layer fl = layers[0]; // fl = first layer (convenience)
-  	int minX = int(map.loc.x + fl.lw/2);
-  	int maxX = int(map.loc.x + map.w - fl.lw/2);
-  	int minY = int(map.loc.y + fl.lh/2);
-  	int maxY = int(map.loc.y + map.h - fl.lh/2);
+  	int minX = int(map.loc.x + fl.dw/2);
+  	int maxX = int(map.loc.x + map.w - fl.dw/2);
+  	int minY = int(map.loc.y + fl.dh/2);
+  	int maxY = int(map.loc.y + map.h - fl.dh/2);
     loc.x = constrain(mouseX, minX, maxX);
     loc.y = constrain(mouseY, minY, maxY);
 

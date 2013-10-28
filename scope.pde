@@ -10,11 +10,6 @@ ScopeViewer scopeViewer;
 void setup() {
   background(255);
   size(800, 600);
-  rSn = 47;
-  // rSn = 29;
-  // rSn = 18;
-  randomSeed(rSn);
-  font = createFont("Helvetica", 24);  //requires a font file in the data folder
 
   map = new Map();
   reticle = new Reticle();
@@ -25,8 +20,6 @@ void setup() {
 
 void draw() {
   background(0);
-//  textFont(font);
-//  text("sspboyd", 10, 100);
 
   map.render();
   reticle.update();
@@ -35,12 +28,13 @@ void draw() {
 
 }
 
+
+
+
+
+// UI
 void keyPressed() {
   if (key == 'S') screenCap();
-}
-
-void mousePressed() {
-  println("hi");
 }
 
 void screenCap() {
@@ -59,4 +53,3 @@ String getSketchName() {
   String[] path = split(sketchPath, "/");
   return path[path.length-1];
 }
-

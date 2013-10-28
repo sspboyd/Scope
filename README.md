@@ -9,11 +9,11 @@ It is a pretty simple sketch. There are likely a lot of different ways of execut
 
 
 
-I structured the code by using a scope and layers metaphor. These are the classes created:
+I structured the code by using a scope and layers metaphor. These are the classes:
 ### Map
-Map holds the image object. Pretty simple. Also has w, h, x, y info about itself.
+Map holds the image object. It is the right side of the image above. Pretty simple. Also has w, h, x, y info about itself.
 ### ScopeViewer
-This object does the work of displaying the copied sample images from the base image in the Map object. 
+This object does the work of displaying the copied sample images from the base image in the Map object. It is the left size of the image above.
 ### Reticle
 The Reticle object's main job is to look at the location of the mouse pointer and then tell the Layer objects to make copies of the base Map image around that spot. These image copies are then stored in an array of Layer objects. 
 
@@ -21,11 +21,11 @@ Before getting the image copies, Reticle checks the location of the mouse and ma
 
 The Reticle does the job of managing the Layer objects. It also initializes them and sets their sample sizes and their display sizes.
 
-Lastly, the reticle object shows a rectangle on the Map showing the area currently being sampled.
+Lastly, the reticle object shows a rectangle on the Map to indicate the area currently being sampled. You can see this rectangle over the Cookie Monster's face above.
 ### Layer
 This object does pretty much just one thing, it copies and stores a section of the Map. It knows it's location based off of the Reticle object's location and works it out from there. Layer doesn't actually do the rendering of the image. That part is owned by ScopeViewer
 ### Scope
-Last but not least, Scope. This is the base file that glues it all together. The Map, Reticle and ScopeViewer objects are initialized here. Each time draw() is called, each map, reticle, and scopeViewer object is updated and rendered as necessary. Note that Layer is not called. Layer is managed by Reticle. 
+Last but not least, Scope. This is the base file that glues it all together. The Map, Reticle and ScopeViewer objects are initialized here. Each time *draw()* is called, the *update()* and *render()* functions are called for Map, Reticle and ScopeViewer as necessary. Note that Layer is not called. Layer is managed by Reticle. 
 
 
 Let me know if you have any questions. 

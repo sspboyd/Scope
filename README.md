@@ -17,7 +17,7 @@ This object does the work of displaying the copied sample images from the base i
 ### Reticle
 The Reticle object's main job is to look at the location of the mouse pointer and then tell the Layer objects to make copies of the base Map image around that spot. These image copies are then stored in an array of Layer objects. 
 
-Before getting the image copies, Reticle checks the location of the mouse and makes sure that the Reticle location doesn't move off the edge of the Map image. The Processing function [constrain()](http://processing.org/reference/constrain_.html) is really useful for here. 
+Before getting the image copies, Reticle checks the location of the mouse and makes sure that the Reticle location doesn't move off the edge of the Map image. The Processing function [constrain()](http://processing.org/reference/constrain_.html) is really useful here. 
 
 The Reticle does the job of managing the Layer objects. It also initializes them and sets their sample sizes and their display sizes.
 
@@ -30,8 +30,7 @@ Last but not least, Scope. This is the base file that glues it all together. The
 
 Let me know if you have any questions. 
 
-Thanks.
-
+Thanks, 
 Stephen
 
 [@sspboyd](https://twitter.com/sspboyd)

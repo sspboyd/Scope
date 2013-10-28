@@ -3,7 +3,7 @@
 This Processing app takes a base image and makes a new view of the image using several samples from the base image around the mouse pointer. The idea for this came from seeing a [MAC eyelashes ad](http://www.flickr.com/photos/25222951@N08/9477944143/sizes/o/) on bus shelters around Toronto.
 
 A video of the sketch in action.
-[![Screencap of the Scope app at work](http://www.flickr.com/photos/sboyd/10529470645/sizes/c/ "Screencap of the Scope app at work")](https://vimeo.com/77990648)
+[![Screencap of the Scope app at work](http://sspboyd.ca/Scope/Scope-Screenshot.jpg "Screencap of the Scope app at work")](https://vimeo.com/77990648)
 
 It is a pretty simple sketch. There are likely a lot of different ways of executing it, and probably much quicker ways of doing it too. What I like about my way is that I can readily add new **Layers** to the **ScopeViewer** (see below for what these mean). And I've already been able to change around the location and display characteristics without major rewriting.
 

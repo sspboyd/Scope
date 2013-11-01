@@ -14,13 +14,10 @@ void setup() {
   map = new Map();
   reticle = new Reticle();
   scopeViewer = new ScopeViewer();
-  scopeViewer.w = 500;
-  scopeViewer.h = 600;
 }
 
 void draw() {
   background(0);
-
   map.render();
   reticle.update();
   scopeViewer.update();

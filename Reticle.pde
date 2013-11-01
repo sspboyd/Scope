@@ -9,7 +9,11 @@ class Reticle {
     layers = new Layer[numLayers];
     retImgs = new PImage[numLayers];
 
-    Layer l3 = new Layer(250, 250, 450, 450);
+    // thinking of changing these from absolute values to relative values
+    // The values below would become
+    // (250/map.w, 250/map.h, 450/scopeViewer.w, 450/scopeViewer.h)
+
+    Layer l3 = new Layer(250, 250, 450, 450); // (layer width, layer height, display width, display height)
     Layer l2 = new Layer(150, 150, 350, 350);
     Layer l1 = new Layer(125, 125, 225, 225);
     Layer l0 = new Layer(100, 100, 100, 100);

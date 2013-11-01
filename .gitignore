@@ -28,8 +28,9 @@ build-tmp/
 #################################
 out/
 srcFiles/
-*.jpg
-*.JPG
+web-export/
+# *.jpg
+# *.JPG
 *.tiff
 *.TIFF
 *.png

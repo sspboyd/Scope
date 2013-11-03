@@ -12,8 +12,8 @@ void setup() {
   size(800, 600);
 
   map = new Map();
-  reticle = new Reticle();
   scopeViewer = new ScopeViewer();
+  reticle = new Reticle();
 }
 
 void draw() {
@@ -22,14 +22,10 @@ void draw() {
   reticle.update();
   scopeViewer.update();
   scopeViewer.render();
-
 }
 
 
-
-
-
-// UI
+// UI ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void keyPressed() {
   if (key == 'S') screenCap();
 }

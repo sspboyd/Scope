@@ -20,14 +20,12 @@ void update(){
 
   void render() {
   	for (int i = 0; i<reticle.layers.length; i++){
-  	pushMatrix();
-
-  		
-  	translate(loc.x, loc.y);
-  	// translate(scopeViewer.w/2.0, scopeViewer.h/2.0);
-  		Layer l = reticle.layers[i]; // convenience
-  		image(l.limg, -l.dw/2.0, -l.dh/2.0, l.dw, l.dh);
-  	popMatrix();
+	  	pushMatrix();
+		  	translate(loc.x, loc.y);
+		  	// translate(scopeViewer.w/2.0, scopeViewer.h/2.0);
+	  		Layer l = reticle.layers[i]; // convenience
+	  		image(l.limg, -l.dwPx/2.0, -l.dhPx/2.0, l.dwPx, l.dhPx);
+	  	popMatrix();
   	}
   }
 }

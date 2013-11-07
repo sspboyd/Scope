@@ -9,7 +9,7 @@ ScopeViewer scopeViewer;
 
 void setup() {
   background(255);
-  size(800, 600);
+  size(1024, 768);
 
   map = new Map();
   scopeViewer = new ScopeViewer();

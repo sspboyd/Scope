@@ -10,6 +10,7 @@ class Map {
   int h = mimg.height;
 
   Map() {
+    mimg.resize(w,h);
   }
 
   void render() {
